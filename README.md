@@ -9,7 +9,7 @@ To solve the problem of implenenting the algorithm,  we use sympy toolbox to cre
 
 In the followinng figure,
 
-![]https://github.com/GrigorisLionis/UCM/blob/main/file01.png
+![](https://github.com/GrigorisLionis/UCM/blob/main/file01.png)
 
 a depiction of the output of the  symbolic model output is shown. The model uses a 3DOF pelvis, and 3DOF for each leg segemt resulting into a 21DOF complete model. (each joint, hip, knee and ankle was modelled as a 3DOF ball and socket joint). The image depicts the lower kinematic chain in 3D and in the two frontal and saggital  planes ) The origin is on the left end of the pelvis.
 
