@@ -5,6 +5,5 @@ The scope of this project is to implement the UCM apporoach on real human motion
 ## Implementing the UCM approach
 To solve the problem we used sympy toolbox to create a symbolic representation of the low kinematic chain. Alternatively we could have used the python robotics toolbox,but we opted for using sympy to have more direct understanding of the symbolic model produced.
 
-https://github.com/GrigorisLionis/UCM/blob/main/output.mp4
+The symbolic model allowed for easy implementation of the basic theory behind UCM.
 
-Press play to see the video
