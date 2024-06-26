@@ -8,11 +8,8 @@ We are tasked to implement the UCM algorithm fora human walking task, and we are
 To solve the problem of implenenting the algorithm,  we use sympy toolbox to create a **symbolic representation** of the human lower kinematic chain. Alternatively we could have used the python robotics toolbox,but we opted for using sympy to have more direct understanding of the symbolic model produced.
 
 In the followinng figure,
-
 ![](https://github.com/GrigorisLionis/UCM/blob/main/file01.png)
-
-a depiction of the output of the  symbolic model output is shown. The model uses a 3DOF pelvis, and 3DOF for each leg segemt resulting into a 21DOF complete model. (each joint, hip, knee and ankle was modelled as a 3DOF ball and socket joint). The image depicts the lower kinematic chain in 3D and in the two frontal and saggital  planes ) The origin is on the left end of the pelvis.
-
+a depiction of the output of the  symbolic model output is shown. The model uses a 3DOF pelvis, and 3DOF for each leg segemt resulting into a 21DOF complete model. (each joint, hip, knee and ankle was modelled as a 3DOF ball and socket joint). The image depicts the lower kinematic chain in 3D and in the two frontal and saggital  planes. The origin is on the left end of the pelvis.
 The symbolic model allowed for easy implementation of the basic theory behind UCM,  for investigating the validity of the concept for different control variables. As UCM essentialy lies on **computing the jacobian of the kinematic chain** and projecting the  joint variance on the null space wrt to a workspace control variable, a symbolic model, along with the extra powerfull symbolic capabilities of sympy, allows for an easy implementation of the UCM algo. 
 
 ### Results
