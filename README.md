@@ -5,7 +5,7 @@ The scope of this project is to implement the **UCM** apporoach on **real human 
 UCM is a theoretical concept [^1] that essentially states that during a motion task where the human body controls a specific control variable in the task space , **most** of the joint variance belongs to the **null space** of the kinematic chain wrt this  specific control variable and the nominal position. Obviously, this definition makes sense only when the task is *repeated* or where there is a naturally defined nominal position in the task space. (otherwise there is no notion of variance)
  Mathematically, let $v(t)$ to be the control variable (in a suitable task space)  $q(t)$ the configurarion vector, with      $$v=F(q)$$ where $F$ is the mapping between configuration and joint task. Let, furtermore $q_0$ be the nominal configuration resulting in $v_0=F(q_0)$ as thew nominal position in the task space.Assume that $U^\bot_{q_0}$ is the subspace of $U$ spanned by the jacobian of $F$ on $q_0$, and $U_{q_0}^{||}$ its complentary space. Let that in a repetition of the experiment on the same point the joint configuration is $$q=q_0+\delta q$$.  Let finally that we $\delta q$ is decomposed onto the two subspaces, i.e. $$\delta q = \delta q^v+\delta q^p$$ with $\delta q^v \in U^\bot_{q_0}$  and $\delta q^p \in U^{||}_{q_0}$ 
  The UCM hypothesis states that 
- $$ |\delta q^v| >> |\delta q^p| $$
+ $$|\delta q^v| >> |\delta q^p|$$
 [^1]:J.Scholz&G.Schöner,The uncontrolled manifold concept: identifying control variables
 for a functional task,Experimental Brain Research,1999,v126,289-306
 ## Implementing the UCM approach
