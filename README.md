@@ -13,10 +13,10 @@ To solve the problem of implenenting the algorithm,  we use sympy toolbox to cre
 * select/construct nominal trajectory
 * compute the Jacobian for points on the nominal trajectory
 * for each trajectory, and each point
-* * compute deviation of joint vector from nominal position
+  * compute deviation of joint vector from nominal position
   * decompose vector on null space and on orthogonal to null
   * compute measure of the two vectors
-    
+* compute statistics of vecotr measures    
 
 In the followinng figure,
 ![](https://github.com/GrigorisLionis/UCM/blob/main/file01.png)
