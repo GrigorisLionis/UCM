@@ -2,7 +2,7 @@
 UCM is an acronym for the UnContolled Manifold concept, which is a hypothesis on how the redundant kinematic mechanism of the human body moves.
 The scope of this project is to implement the **UCM** apporoach on **real human walking** motion data. This work is executed under contract for a specific research group.
 ## A -very- short description of UCM
-UCM is a theoretical concept [^1] that essentially states that during a motion task where the human body controls a specific control variable in the task space , **most** of the joint variance belongs to the **null space** wrt this  specific control variable. Obviously, this definition makes sense only when the task is *repeated* (otherwise there is no notion of variance)
+UCM is a theoretical concept [^1] that essentially states that during a motion task where the human body controls a specific control variable in the task space , **most** of the joint variance belongs to the **null space** wrt this  specific control variable and nominal position. Obviously, this definition makes sense only when the task is *repeated* (otherwise there is no notion of variance)
 [^1]:J.Scholz&G.Schöner,The uncontrolled manifold concept: identifying control variables
 for a functional task,Experimental Brain Research,1999,v126,289-306
 ## Implementing the UCM approach
