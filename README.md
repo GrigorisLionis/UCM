@@ -8,7 +8,7 @@ UCM is a theoretical concept [^1] that essentially states that during a motion t
  $$|\delta q^v| >> |\delta q^p|$$ 
 
  The rational behind the theory is straight-forward
- $$F(q_0+\delta q) \approx F(q) +  \nabla F\times\delta q^p + \nabla F\times\delta q^v = F(q_0) + \nabla F\times\delta q^p$$, since $\nabla F \times q^v = 0$ and if $q_p$ is small, so is the acutal deviation from $v_0$ 
+ $$F(q_0+\delta q) \approx F(q) +  \nabla F\times\delta q^p + \nabla F\times\delta q^v = F(q_0) + \nabla F\times\delta q^p$$, since $\nabla F \times q^v = 0$ and if $\delta q^p$ is small, so is the acutal deviation of the control variable from $v_0$ 
 [^1]:J.Scholz&G.Schöner,The uncontrolled manifold concept: identifying control variables
 for a functional task,Experimental Brain Research,1999,v126,289-306
 ## Implementing the UCM approach
