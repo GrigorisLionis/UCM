@@ -1,13 +1,13 @@
 # UCM
-UCM is an acronym for the UnContolled Manifold concept, which is a hypothesis on how the redundant kinematic mechanism of the human body moves.
-The scope of this project is to implement the **UCM** apporoach on **real human walking** motion data. This work is executed under contract for a specific research group.
+UCM is an acronym for the **UnContolled Manifold concept**, which is a hypothesis on how the redundant kinematic mechanism of the human body moves.
+The scope of this project is to implement the **UCM** apporoach on **real human walking** motion data. This work is executed under contract for a  research group.
 ## A -very- short description of UCM
-UCM is a theoretical concept [^1] that essentially states that during a motion task where the human body controls a specific control variable in the task space , **most** of the joint variance belongs to the **null space** wrt this  specific control variable and nominal position. Obviously, this definition makes sense only when the task is *repeated* or where there is a naturally defined nominal position in the task space. (otherwise there is no notion of variance)
+UCM is a theoretical concept [^1] that essentially states that during a motion task where the human body controls a specific control variable in the task space , **most** of the joint variance belongs to the **null space** of the kinematic chain wrt this  specific control variable and the nominal position. Obviously, this definition makes sense only when the task is *repeated* or where there is a naturally defined nominal position in the task space. (otherwise there is no notion of variance)
 [^1]:J.Scholz&G.Schöner,The uncontrolled manifold concept: identifying control variables
 for a functional task,Experimental Brain Research,1999,v126,289-306
 ## Implementing the UCM approach
-We are tasked to implement the UCM algorithm fora human walking task, and we are given the joint coordinates wrt -normalized- time, and a set of potential control varibles in the task space. 
-To solve the problem of implenenting the algorithm,  we use sympy toolbox to create a **symbolic representation** of the human lower kinematic chain. Alternatively we could have used the python robotics toolbox,but we opted for using sympy to have more direct understanding of the symbolic model produced.
+We are tasked to implement the UCM algorithm for a human walking task, and we are given the joint coordinates wrt -normalized- time, and a set of potential control varibles in the task space. 
+To solve the problem of implenenting the algorithm,  we use sympy toolbox to create a **symbolic representation** of the human lower kinematic chain. The code produces internally a anayltic model of the kinematic position of the body wrt the joint angles. Alternatively we could have used the python robotics toolbox which contains relevant functionality,but we opted for using sympy to have more direct control of the symbolic model produced.
 ### Algorithm for UCM calculations for human walk experiments
 * select control variable & construct symbolic representation of the Jacobian
 * select/construct nominal trajectory
@@ -16,7 +16,7 @@ To solve the problem of implenenting the algorithm,  we use sympy toolbox to cre
   * compute deviation of joint vector from nominal position
   * decompose vector on null space and on orthogonal to null
   * compute measure of the two vectors
-* compute statistics of vecotr measures    
+* compute statistics of vector measures    
 
 In the followinng figure,
 ![](https://github.com/GrigorisLionis/UCM/blob/main/file01.png)
@@ -28,7 +28,7 @@ In the following figure,
 
 ![](https://github.com/GrigorisLionis/UCM/blob/main/traj.jpeg)
 
-a plot of the varianace of a control variable wrt the normalized time (s) , for a number of different runs (r) is shown.  
+a plot of the varianace of a specific control variable wrt the normalized time (s) , for a number of different runs (r) is depicted, showing the variability of the motion.  
 
 While in the following figure,
 
