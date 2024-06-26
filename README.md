@@ -22,4 +22,4 @@ While in the following figure,
 a composite plot depicting different aspects of the variance (V4,V5,V6) are shown wrt normalized time (X axis, V2) , for different control variables (X facet)  and different walking conditions (color coded) 
 
 ### Disclaimer
-This work is under contract for a research group analyzing specific data, so code, data amd results are copyrighted. Images are depicted only for indicative demonstration of results.  
+This work is under contract for a research group analyzing specific data, so **code, data and results** are copyrighted. Images are depicted only for indicative demonstration of results.  
